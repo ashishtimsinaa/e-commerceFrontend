@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			margin: 0;
+			background-color: #EEDDCC;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!--- Navigation Bar --->
+	<div class="navbar">
+		<a class="active" href="index.html">Home</a>
+		<a href="product.html">Product</a>
+		<a href="blog.html">Blog</a>
+		<a href="research.html">Research</a>
+		<a href="contact.html">Contact Us</a>
+	</div>
+
+
+	<!--- Main --->
+	<div class="main">
+		<div class="main-content">
+			<div class="left">
+				<!-- inline css -->
+				<span class="subtitle"
+					style="font-size:xx-large; font-family: 'Montserrat', sans-serif;; font-weight: 400;">GET YOUR NEW
+					HANDSET</span>
+				<!-- inline css -->
+				<div style="margin-top: 12%;">
+					<h1 class="title">GET <span class="color">10% Discount </span>on <br />Online
+						Purchase</h1>
+					<h5>Free delivery on full payment</h5>
+					<a href="product.html" class="button">ORDER NOW</a>
+				</div>
+			</div>
+			<div class="right">
+				<div class="slider">
+					<div id="img">
+						<img src="images/homepage/slider5.png">
+					</div>
+				</div>
+
+				<script>
+					var images = ['images/homepage/slider1.png', 'images/homepage/slider2.png', 'images/homepage/slider3.png', 'images/homepage/slider4.png', 'images/homepage/slider5.png'];
+
+					var x = 0;
+					var imgs = document.getElementById('img');
+					setInterval(slider, 2800);
+
+					function slider() {
+
+						if (x < images.length) {
+							x = x + 1;
+						}
+
+						else {
+							x = 1;
+						}
+
+
+						imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+					}
+				</script>
+			</div>
+		</div>
+	</div>
+	<!--- Latest Phones --->
+	<section class="section">
+		<div class="title">
+			<h1>Latest Phones</h1>
+		</div>
+		<div class="latest-center container">
+			<div class="latest">
+				<div class="img-cover">
+					<img src="images/homepage/iPhone_13_pro_max.png" alt="" />
+				</div>
+				<p>Iphone 13 Pro Max</p>
+				<div class="price">$999</div>
+			</div>
+			<div class="latest">
+				<div class="img-cover">
+					<img src="images/homepage/oneplus_10_pro_5g.png" alt="" />
+				</div>
+				<p>OnePlus 10 Pro 5G</p>
+				<div class="price">$799</div>
+			</div>
+			<div class="latest">
+				<div class="img-cover">
+					<img src="images/homepage/galaxy_a72.png" alt="" />
+				</div>
+				<p>Galaxy A72</p>
+				<div class="price">$449</div>
+			</div>
+			<div class="latest">
+				<div class="img-cover">
+					<img src="images/homepage/poco_f3_gt.png" alt="" />
+				</div>
+				<p>Poco F3 GT</p>
+				<div class="price">$399</div>
+			</div>
+		</div>
+	</section>
+	<!---Our Brands --->
+	<section class="section">
+		<div class="title">
+			<h1>Our Brands</h1>
+		</div>
+		<div class="brands container">
+			<div class="brands">
+				<img src="images/homepage/apple_logo.png" alt="" />
+			</div>
+			<div class="brands">
+				<img src="images/homepage/samsung_logo.png" alt="" />
+			</div>
+			<div class="brands">
+				<img src="images/homepage/poco.png" alt="" />
+			</div>
+			<div class="brands">
+				<img src="images/homepage/realme_logo.png" alt="" />
+			</div>
+			<div class="brands">
+				<img src="images/homepage/OnePlus_logo.png" alt="" />
+			</div>
+		</div>
+	</section>
+	<!--- Services --->
+	<section class="service section">
+		<div class="title">
+			<h1>Services</h1>
+		</div>
+		<div class="service-center container">
+			<div class="service">
+				<h4>Home Delivery</h4>
+			</div>
+			<div class="service">
+				<h4>Quality Checked</h4>
+			</div>
+			<div class="service">
+				<h4>Secure Shopping</h4>
+			</div>
+			<div class="service">
+				<h4>Easy Returns</h4>
+			</div>
+			<div class="service">
+				<h4>6 Months warranty on every phone</h4>
+			</div>
+			<div class="service">
+				<h4>24*7 Support</h4>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer" class="section footer">
+		<div class="container">
+			<div class="footer-container">
+				<div class="footer-center">
+					<h3>Social Media</h3>
+					<a href="#">Facebook</a>
+					<a href="https://twitter.com/ashishtimsina8" target="_blank">Twitter</a>
+				</div>
+
+				<div class="footer-center">
+					<h3>MY ACCOUNT</h3>
+					<a href="#">My Account</a>
+					<a href="#">Cart</a>
+					<a href="#">Order History</a>
+					<a href="#">Returns</a>
+				</div>
+				<div class="footer-center">
+					<h3>INFORMATION</h3>
+					<a href="#">About Us</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Terms & Conditions</a>
+				</div>
+				<div class="footer-center">
+					<h3>CONTACT US</h3>
+
+					<div>
+						<p>info@ashishtimsina.com.np
+						<p>
+					</div>
+					<div>
+						<p>9867992325
+						<p>
+					</div>
+					<div>
+						<p>Putalisadak, Kathmandu, Nepal
+						<p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

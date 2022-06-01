@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			margin: 0;
+			background-color: #EEDDCC;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!--- Navbar --->
+	<div class="navbar">
+		<a href="index.html">Home</a>
+		<a href="product.html">Product</a>
+		<a href="blog.html">Blog</a>
+		<a href="research.html">Research</a>
+		<a class="active" href="contact.html">Contact Us</a>
+	</div>
+
+	<!--- Contact Us --->
+	<div class="contact">
+		<div class="wrapper container">
+			<h2>Contact us</h2>
+			<div id="error_message">
+			</div>
+			<form action="" id="myform" onsubmit="validate();">
+				<div class="input_field">
+					<input type="text" placeholder="Name" id="name">
+				</div>
+				<div class="input_field">
+					<input type="text" placeholder="Subject" id="subject">
+				</div>
+				<div class="input_field">
+					<input type="number" placeholder="Phone" id="phone">
+				</div>
+				<div class="input_field">
+					<input type="email" placeholder="Email" id="email">
+				</div>
+				<div class="input_field">
+					<textarea placeholder="Message" id="message"></textarea>
+				</div>
+				<div class="btn">
+					<input type="submit">
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer id="footer" class="section footer">
+		<div class="container">
+			<div class="footer-container">
+				<div class="footer-center">
+					<h3>Social Media</h3>
+					<a href="#">Facebook</a>
+					<a href="https://twitter.com/ashishtimsina8" target="_blank">Twitter</a>
+				</div>
+
+				<div class="footer-center">
+					<h3>MY ACCOUNT</h3>
+					<a href="#">My Account</a>
+					<a href="#">Cart</a>
+					<a href="#">Order History</a>
+					<a href="#">Returns</a>
+				</div>
+				<div class="footer-center">
+					<h3>INFORMATION</h3>
+					<a href="#">About Us</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Terms & Conditions</a>
+				</div>
+				<div class="footer-center">
+					<h3>CONTACT US</h3>
+
+					<div>
+						<p>info@ashishtimsina.com.np
+						<p>
+					</div>
+					<div>
+						<p>9867992325
+						<p>
+					</div>
+					<div>
+						<p>Putalisadak, Kathmandu, Nepal
+						<p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="script.js"></script>
+</body>
+
+</html>
